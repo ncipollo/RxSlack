@@ -1,0 +1,24 @@
+{
+  "name": "rxslack",
+  "version": "0.0.1",
+  "description": "RxJS bindings for slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncipollo/rxslack.git"
+  },
+  "keywords": [
+    "reactive",
+    "rxjs",
+    "slack"
+  ],
+  "author": "Nick Cipollo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ncipollo/rxslack/issues"
+  },
+  "homepage": "https://github.com/ncipollo/rxslack#readme"
+}
