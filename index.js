@@ -1,7 +1,14 @@
-/**
- * Created by Nick Cipollo on 8/25/16.
- */
+let RxSlack = require('./lib/rxslack.js').RxSlack;
+const token = process.env.TOKEN;
 
-var RxSlack = require('./lib/rxslack.js').RxSlack
+let slack = new RxSlack(token);
 
+slack.rtm
+    .onAuthenticated
+    .subscribe(data => console.log(data));
 
+slack.rtm
+    .onMessage
+    .subscribe(message => console.log(message));
+
+slack.start();
