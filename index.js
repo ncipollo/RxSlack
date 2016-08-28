@@ -7,6 +7,7 @@ slack.rtm
     .onAuthenticated
     .subscribe(data => console.log(data));
 
+
 slack.rtm
     .onMessage
     .subscribe(message => console.log(message));
