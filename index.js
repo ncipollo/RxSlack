@@ -4,13 +4,11 @@ const token = process.env.TOKEN;
 
 let slack = new RxSlack(token);
 
-slack.rtm
-    .onAuthenticated
+slack.onAuthenticated
     .subscribe(data => console.log(data));
 
 
-slack.rtm
-    .onMessage
+slack.onMessage
     .subscribe(message => console.log(message));
 
 slack.start();
