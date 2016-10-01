@@ -1,9 +1,9 @@
 const expect = require('chai').expect;
-const RxSlack = require('../../lib/rxslack.js').RxSlack;
-const RxUser = require('../../lib/models/user').RxUser;
-const RxChannel = require('../../lib/models/channel').RxChannel;
-const RxMessage = require('../../lib/models/message').RxMessage;
-const token = process.env.TOKEN;
+const RxSlack = require('../lib/rxslack.js').RxSlack;
+const RxUser = require('../lib/models/user').RxUser;
+const RxChannel = require('../lib/models/channel').RxChannel;
+const RxMessage = require('../lib/models/message').RxMessage;
+const token = process.env.RECV_TOKEN;
 
 describe('Models', function () {
     let rxSlack = new RxSlack(token);
